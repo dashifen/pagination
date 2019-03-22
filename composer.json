@@ -1,0 +1,24 @@
+{
+	"name": "dashifen/pagination-trait",
+	"description": "A trait and associated Container for use with WordPress pagination",
+	"type": "project",
+	"license": "WTFPL",
+	"authors": [
+		{
+			"name": "David Dashifen Kees",
+			"email": "dashifen@dashifen.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Pagination\\": "src"
+		}
+	},
+
+	"require": {
+		"php": ">=7.2",
+		"dashifen/containers": "1.1.*"
+	}
+}
