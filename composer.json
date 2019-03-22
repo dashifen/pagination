@@ -1,5 +1,5 @@
 {
-	"name": "dashifen/pagination-trait",
+	"name": "dashifen/pagination",
 	"description": "A trait and associated Container for use with WordPress pagination",
 	"type": "project",
 	"license": "WTFPL",
