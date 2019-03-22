@@ -1,9 +1,17 @@
 <?php
 
-namespace Pagination\Containers;
+namespace Dashifen\Pagination;
 
 use Dashifen\Container\Container;
+use Dashifen\Pagination\Exceptions\PaginationLinkException;
 
+/**
+ * Class PaginationLink
+ * @package Pagination\Containers
+ * @property $pageNumber
+ * @property $current
+ * @property $link
+ */
 class PaginationLink extends Container {
 	/**
 	 * @var int

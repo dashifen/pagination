@@ -1,6 +1,6 @@
 <?php
 
-namespace Pagination\Containers;
+namespace Dashifen\Pagination\Exceptions;
 
 use Dashifen\Exception\Exception;
 
