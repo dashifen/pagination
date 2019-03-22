@@ -158,7 +158,7 @@ trait PaginationTrait {
 	protected function getPaginationLink(int $pageNum): PaginationLink {
 		return new PaginationLink([
 			"pageNumber" => $pageNum,
-			"isCurrent"  => $this->currentPage === $pageNum,
+			"current"  => $this->currentPage === $pageNum,
 			"link"       => get_pagenum_link($pageNum),
 		]);
 	}
