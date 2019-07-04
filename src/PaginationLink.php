@@ -2,17 +2,17 @@
 
 namespace Dashifen\Pagination;
 
-use Dashifen\Container\Container;
+use Dashifen\Repository\Repository;
 use Dashifen\Pagination\Exceptions\PaginationLinkException;
 
 /**
  * Class PaginationLink
- * @package Pagination\Containers
+ * @package Pagination\Repositories
  * @property $pageNumber
  * @property $current
  * @property $link
  */
-class PaginationLink extends Container {
+class PaginationLink extends Repository {
 	/**
 	 * @var int
 	 */

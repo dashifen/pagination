@@ -2,7 +2,7 @@
 
 namespace Dashifen\Pagination;
 
-use Dashifen\Container\ContainerException;
+use Dashifen\Repository\RepositoryException;
 use WP_Query;
 
 trait PaginationTrait {
@@ -36,7 +36,7 @@ trait PaginationTrait {
 	 * @param int      $linkCount
 	 *
 	 * @return Pagination
-	 * @throws ContainerException
+	 * @throws RepositoryException
 	 */
 	protected function getPagination(WP_Query $query, int $linkCount = 5): Pagination {
 		$this->maximumPage = $query->max_num_pages;
@@ -52,7 +52,7 @@ trait PaginationTrait {
 		$this->halfCount = floor($this->linkCount / 2);
 
 		// now, we're ready to return our pagination links.  we pass the
-		// necessary data right to the Pagination container's constructor
+		// necessary data right to the Pagination Repository's constructor
 		// as follows.  these data are all produced by the methods below.
 
 		return new Pagination([
@@ -128,7 +128,7 @@ trait PaginationTrait {
 	 * current one.
 	 *
 	 * @return PaginationLink
-	 * @throws ContainerException
+	 * @throws RepositoryException
 	 */
 	protected function getPreviousPaginationLink(): PaginationLink {
 
@@ -153,7 +153,7 @@ trait PaginationTrait {
 	 * @param int $pageNum
 	 *
 	 * @return PaginationLink
-	 * @throws ContainerException
+	 * @throws RepositoryException
 	 */
 	protected function getPaginationLink(int $pageNum): PaginationLink {
 		return new PaginationLink([
@@ -170,7 +170,7 @@ trait PaginationTrait {
 	 * one and the number for the final one.
 	 *
 	 * @return PaginationLink
-	 * @throws ContainerException
+	 * @throws RepositoryException
 	 */
 	protected function getNextPaginationLink(): PaginationLink {
 
