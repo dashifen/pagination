@@ -19,6 +19,6 @@
 
 	"require": {
 		"php": ">=7.2",
-		"dashifen/repository": "1.0.*"
+		"dashifen/repository": "^1"
 	}
 }
